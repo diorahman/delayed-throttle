@@ -1,0 +1,16 @@
+{
+  "name": "delayed-throttle",
+  "version": "1.0.0",
+  "description": "Throttle and delayed async process",
+  "main": "index.js",
+  "scripts": {
+    "example": "async-node example.js"
+  },
+  "author": "Dhi Aurrahman",
+  "license": "MIT",
+  "devDependencies": {
+    "async-to-gen": "1.1.4",
+    "cheerio": "0.22.0",
+    "node-fetch": "1.6.3"
+  }
+}
