@@ -1,3 +1,5 @@
+'use strict';
+
 const create = require('./');
 const fetch = require('node-fetch');
 const {load} = require('cheerio');

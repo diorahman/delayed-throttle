@@ -3,3 +3,9 @@
 ```
 $ npm run example
 ```
+
+### install
+
+```
+$ npm install delayed-throttle
+```
