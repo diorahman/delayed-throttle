@@ -4,7 +4,7 @@ const create = require('./');
 const fetch = require('node-fetch');
 const {load} = require('cheerio');
 
-const throttle = create(/* max number of processes */ 1, /* delay */ 5000);
+const throttle = create(/* max number of processes */ 2, /* delay */ 5000);
 
 const urls = [
   'https://hooq.tv',
@@ -15,11 +15,11 @@ const urls = [
   'https://woot.com'
 ];
 
-console.log('delayed 5000 ms + time taken by the process');
+console.log('delayed 5000 ms + time taken by the process (concurrent level: 2)');
 
 Promise.all(
   urls.map(url => throttle(async () => {
-    console.log('AT', new Date());
+    console.log('GRABBING TITLE FOR', url, 'AT', new Date());
     const res = await fetch(url);
     const data = await res.text();
     const $ = load(data);

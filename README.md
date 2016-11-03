@@ -9,3 +9,5 @@ $ npm run example
 ```
 $ npm install delayed-throttle
 ```
+
+![gif](http://g.recordit.co/aeY6RB0bRT.gif)
